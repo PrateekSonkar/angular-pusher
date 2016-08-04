@@ -20,7 +20,7 @@ app.use(session);
 
 app.all('/', function(req, res) {
     req.session.myCustomData = {
-        msg: "add something you need to session, like userID",
+        msg: "Add something you need to session, like userID",
         userID: Math.floor(Math.random() * 100)
     }
     res.render('pages/index', {
